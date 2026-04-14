@@ -1,0 +1,18 @@
+dashboard_section,metric_name,metric_value,source_name,reporting_year,notes
+Institution Benchmarks,total_enrollment,62701,IPEDS,2024,12-month unduplicated total enrollment from EFFY2024
+Institution Benchmarks,first_year_retention_rate,0.91,IPEDS,2024,Derived from RET_PCF in EF2024D
+Institution Benchmarks,admissions_rate,0.7821,College Scorecard,2026,ADM_RATE from Most Recent Cohorts Institution file
+Institution Benchmarks,degrees_awarded_total,34910,IPEDS,2024,Sum of CTOTALT for MAJORNUM=1 in C2024_A
+Outcomes Benchmarks,undergraduate_enrollment,37806,College Scorecard,2026,UGDS from Most Recent Cohorts Institution file
+Outcomes Benchmarks,graduation_rate,0.8021,College Scorecard,2026,C150_4 from Most Recent Cohorts Institution file
+Outcomes Benchmarks,graduation_rate_ipeds,0.8021,IPEDS,2024,Computed as 6458 divided by 8051 from GR2024
+Outcomes Benchmarks,median_earnings,63742,College Scorecard,2026,MD_EARN_WNE_P10 from Most Recent Cohorts Institution file
+Outcomes Benchmarks,median_grad_debt,19509,College Scorecard,2026,GRAD_DEBT_MDN from Most Recent Cohorts Institution file
+Institution Profile,undergraduate_enrollment,38463,IU CDS,2025,Manually captured from CDS section B1
+Institution Profile,graduate_enrollment,10163,IU CDS,2025,Manually captured from CDS section B1
+Institution Profile,total_all_students,48626,IU CDS,2025,Manually captured from CDS section B1
+Institution Profile,degrees_conferred,20593,IU CDS,2025,Manually captured from CDS section B3
+Institution Profile,bachelors_degrees,8436,IU CDS,2025,Manually captured from CDS section B3
+Institution Profile,retention_rate,0.904,IU CDS,2025,Manually captured from CDS section B22
+Institution Profile,six_year_graduation_rate,0.8004,IU CDS,2025,Manually captured from CDS section B4-B21
+Institution Profile,admissions_rate,0.7591,IU CDS,2025,Computed from 56218 admitted divided by 74077 applicants in CDS section C1
