@@ -1,0 +1,5 @@
+benchmark_record_id,source_name,institution_name,institution_id,reporting_year,metric_name,metric_value,metric_group,source_url,notes
+bench_ipeds_2024_total_enrollment,IPEDS,Indiana University-Bloomington,151351,2024,total_enrollment,62701,enrollment,https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx,12-month unduplicated total enrollment from EFFY2024
+bench_ipeds_2024_retention,IPEDS,Indiana University-Bloomington,151351,2024,first_year_retention_rate,0.91,retention,https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx,Derived from RET_PCF in EF2024D
+bench_scorecard_2026_admissions,College Scorecard,Indiana University-Bloomington,151351,2026,admissions_rate,0.7821,admissions,https://collegescorecard.ed.gov/data/,ADM_RATE from Most Recent Cohorts Institution file
+bench_ipeds_2024_degrees_awarded,IPEDS,Indiana University-Bloomington,151351,2024,degrees_awarded_total,34910,completions,https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx,Sum of CTOTALT for MAJORNUM=1 in C2024_A

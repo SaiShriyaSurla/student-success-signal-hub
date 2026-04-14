@@ -1,0 +1,6 @@
+outcome_benchmark_id,source_name,institution_name,reporting_year,metric_name,metric_value,metric_group,population_scope,source_url,notes
+outcome_scorecard_2026_undergraduate_enrollment,College Scorecard,Indiana University-Bloomington,2026,undergraduate_enrollment,37806,enrollment,institution,https://collegescorecard.ed.gov/data/,UGDS from Most Recent Cohorts Institution file
+outcome_scorecard_2026_graduation_rate,College Scorecard,Indiana University-Bloomington,2026,graduation_rate,0.8021,completion,institution,https://collegescorecard.ed.gov/data/,C150_4 from Most Recent Cohorts Institution file
+outcome_ipeds_2024_graduation_rate,IPEDS,Indiana University-Bloomington,2024,graduation_rate_ipeds,0.8021,completion,cohort,https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx,Computed as 6458 divided by 8051 from GR2024
+outcome_scorecard_2026_median_earnings,College Scorecard,Indiana University-Bloomington,2026,median_earnings,63742,earnings,institution,https://collegescorecard.ed.gov/data/,MD_EARN_WNE_P10 from Most Recent Cohorts Institution file
+outcome_scorecard_2026_median_grad_debt,College Scorecard,Indiana University-Bloomington,2026,median_grad_debt,19509,debt,institution,https://collegescorecard.ed.gov/data/,GRAD_DEBT_MDN from Most Recent Cohorts Institution file

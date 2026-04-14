@@ -1,0 +1,9 @@
+profile_record_id,source_name,institution_name,reporting_year,profile_metric_name,profile_metric_value,metric_group,source_url,notes
+profile_iucds_2025_undergraduate_enrollment,IU CDS,Indiana University Bloomington,2025,undergraduate_enrollment,38463,enrollment,https://iuapps.iu.edu/cds/,Manually captured from CDS section B1
+profile_iucds_2025_graduate_enrollment,IU CDS,Indiana University Bloomington,2025,graduate_enrollment,10163,enrollment,https://iuapps.iu.edu/cds/,Manually captured from CDS section B1
+profile_iucds_2025_total_enrollment,IU CDS,Indiana University Bloomington,2025,total_all_students,48626,enrollment,https://iuapps.iu.edu/cds/,Manually captured from CDS section B1
+profile_iucds_2025_degrees_conferred,IU CDS,Indiana University Bloomington,2025,degrees_conferred,20593,completions,https://iuapps.iu.edu/cds/,Manually captured from CDS section B3
+profile_iucds_2025_bachelors_degrees,IU CDS,Indiana University Bloomington,2025,bachelors_degrees,8436,completions,https://iuapps.iu.edu/cds/,Manually captured from CDS section B3
+profile_iucds_2025_retention_rate,IU CDS,Indiana University Bloomington,2025,retention_rate,0.904,persistence,https://iuapps.iu.edu/cds/,Manually captured from CDS section B22
+profile_iucds_2025_graduation_rate,IU CDS,Indiana University Bloomington,2025,six_year_graduation_rate,0.8004,persistence,https://iuapps.iu.edu/cds/,Manually captured from CDS section B4-B21
+profile_iucds_2025_admissions_rate,IU CDS,Indiana University Bloomington,2025,admissions_rate,0.7591,admissions,https://iuapps.iu.edu/cds/,Computed from 56218 admitted divided by 74077 applicants in CDS section C1
