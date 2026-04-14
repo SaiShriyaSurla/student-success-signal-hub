@@ -1,0 +1,12 @@
+metric_name,metric_value,display_value,source_name,source_file,source_field,notes
+institution_name,Indiana University-Bloomington,Indiana University-Bloomington,IPEDS,hd2024.csv,INSTNM,Institution label for all Version 1 metrics
+unitid,151351,151351,IPEDS,hd2024.csv,UNITID,IPEDS institution identifier
+total_enrollment,62701,"62,701",IPEDS,effy2024.csv,EFYTOTLT,12-month unduplicated total enrollment
+undergraduate_enrollment,37806,"37,806",College Scorecard,Most-Recent-Cohorts-Institution.csv,UGDS,Undergraduate student count from the most recent institution-level file
+first_year_retention_rate,0.91,91.0%,IPEDS,ef2024d.csv,RET_PCF,Converted from percent value 91
+graduation_rate,0.8021,80.21%,College Scorecard,Most-Recent-Cohorts-Institution.csv,C150_4,Most recent completion/graduation rate field
+graduation_rate_ipeds,0.8021,80.21%,IPEDS,gr2024.csv,"GRTOTLT where GRTYPE=3, CHRTSTAT=13","Computed as 6458 / 8051 using adjusted cohort and total graduates"
+degrees_awarded_total,34910,"34,910",IPEDS,c2024_a.csv,CTOTALT,Sum of CTOTALT for UNITID 151351 where MAJORNUM=1
+admissions_rate,0.7821,78.21%,College Scorecard,Most-Recent-Cohorts-Institution.csv,ADM_RATE,Most recent admissions rate
+median_earnings,63742,"63,742",College Scorecard,Most-Recent-Cohorts-Institution.csv,MD_EARN_WNE_P10,Median earnings after attendance
+median_grad_debt,19509,"19,509",College Scorecard,Most-Recent-Cohorts-Institution.csv,GRAD_DEBT_MDN,Median graduate debt
