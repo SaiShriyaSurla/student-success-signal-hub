@@ -39,3 +39,16 @@ The project is expected to include:
 - `reports`: exported summaries, screenshots, and portfolio artifacts
 - `src`: future ingestion, transformation, validation, and dashboard code
 - `tests`: future data quality and transformation tests
+
+## Dashboard Prototype
+
+The first dashboard prototype is a Streamlit app:
+
+- `src/app.py`
+
+Install the dependency and run it locally:
+
+```bash
+pip install -r requirements.txt
+streamlit run src/app.py
+```
