@@ -2,18 +2,19 @@
 
 ## Purpose
 
-This document defines which public sources will be used in Student Success Signal Hub, what each source contributes, and which project tables will rely on real public data versus synthetic operational data.
+This document defines which existing public sources will be used in Student Success Signal Hub, what each source contributes, and how those sources map into the project's analytical tables.
 
 The goal is to make the project transparent, realistic, and easy to explain in a portfolio or interview setting.
 
 ## Data Approach
 
-The project will use a hybrid data strategy:
+The project will use an existing-datasets-only strategy:
 
-- real public data for institutional benchmarks, definitions, and reporting context
-- synthetic student-level data for operational workflows that would normally be private or protected
+- public institutional datasets for benchmark metrics and multi-year trend analysis
+- public methodology sources for KPI definitions and reporting context
+- institution-specific public documentation for framing and interpretation
 
-This approach reflects how higher education analytics work often combines official aggregate reporting with internal operational systems that are not publicly accessible.
+This approach keeps the project fully grounded in real, citable data while avoiding the need to fabricate operational student records.
 
 ## Source Inventory
 
@@ -71,10 +72,10 @@ This approach reflects how higher education analytics work often combines offici
   - academic profile and degree conferral context
 - Planned use:
   - support institution-specific realism
-  - guide assumptions for cohort sizes and student distributions in synthetic data
+  - anchor the project in a real institutional context connected to the target role
 - Project tables supported:
+  - `institution_profile`
   - `institution_benchmarks`
-  - synthetic modeling assumptions for `students`
 - Likely fields to capture:
   - reporting_year
   - undergraduate_enrollment
@@ -91,17 +92,14 @@ This approach reflects how higher education analytics work often combines offici
   - exam types and operational timing
   - stakeholder process understanding
 - Planned use:
-  - model the synthetic placement process realistically
-  - ensure fields and statuses reflect believable operational workflows
+  - provide business-process context for how placement supports student success reporting
+  - strengthen the project narrative even though placement will not be the main dataset
 - Project tables supported:
-  - `placement_exams`
-  - `data_quality_issues`
+  - `reporting_context`
 - Likely fields informed by this source:
-  - placement_exam_type
-  - placement_required_flag
-  - placement_status
-  - exam_window
-  - follow_up_needed_flag
+  - placement_process_notes
+  - placement_exam_types
+  - operational_context
 
 ### 5. NACE First-Destination Standards and Protocols
 
@@ -127,26 +125,12 @@ This approach reflects how higher education analytics work often combines offici
 
 ## Real Versus Synthetic Mapping
 
-### Real Public Data
-
 The following project data should come directly or indirectly from public sources:
 
 - institution benchmark metrics
+- graduate outcomes and earnings context
 - outcome reporting methodology
-- placement process context
-- assumptions for realistic cohort sizing and distributions
-
-### Synthetic Operational Data
-
-The following project data should be generated:
-
-- student-level records
-- placement attempts and scores
-- advising interactions
-- experiential learning participation
-- first-destination outreach records
-- verification workflow details
-- data quality exception records
+- institution-specific reporting context
 
 ## Table-by-Table Source Strategy
 
@@ -160,55 +144,31 @@ The following project data should be generated:
 - Notes:
   - this table will anchor institutional context and multi-year reporting
 
-### `students`
+### `outcomes_benchmarks`
 
-- Primary source type: Synthetic
-- Sources informing design:
-  - IU Common Data Set
-  - IPEDS
-- Notes:
-  - student demographics and cohort distributions should be modeled using realistic institutional proportions where possible
-
-### `placement_exams`
-
-- Primary source type: Synthetic
-- Sources informing design:
-  - IU Placement Exams page
-- Notes:
-  - workflows should include incomplete records, multiple attempts, and follow-up flags
-
-### `advising_engagement`
-
-- Primary source type: Synthetic
-- Sources informing design:
-  - project business questions and realistic student success workflows
-- Notes:
-  - should include both completed and missed or canceled interactions
-
-### `experiential_learning`
-
-- Primary source type: Synthetic
-- Sources informing design:
-  - career readiness and student engagement assumptions
-- Notes:
-  - can include internships, research, service learning, and campus involvement markers
-
-### `career_outcomes`
-
-- Primary source type: Synthetic with real methodology
+- Primary source type: Real public data with real methodology
 - Sources informing design:
   - NACE standards
   - College Scorecard context
 - Notes:
-  - should include missing and unverified cases to support knowledge rate reporting
+  - this table will summarize post-college outcomes context, definitions, and institution-level measures
 
-### `data_quality_issues`
+### `institution_profile`
 
-- Primary source type: Synthetic
+- Primary source type: Real public data
 - Sources informing design:
-  - realistic reporting and validation failure cases
+  - IU Common Data Set
 - Notes:
-  - should track issue type, severity, status, and resolution context
+  - this table will capture institution-specific context such as undergraduate enrollment and degree conferral framing
+
+### `reporting_context`
+
+- Primary source type: Real public documentation
+- Sources informing design:
+  - NACE standards
+  - IU Placement Exams page
+- Notes:
+  - this table can store KPI definitions, methodology notes, and process context used in the case study and dashboard documentation
 
 ## Recommended Initial Public Data Pull
 
@@ -234,10 +194,10 @@ Recommended first pull:
 
 When this project is presented, it should clearly state:
 
-- aggregate benchmark data comes from official public sources
-- student-level operational data is synthetic
-- synthetic datasets were intentionally modeled to reflect real university workflows, reporting categories, and data quality issues
+- all analytical datasets come from existing public sources
+- methodology and KPI logic are grounded in official reporting definitions
+- institution-specific process context is used to strengthen the business analysis narrative
 
 ## Recommended Next Step
 
-The next step is to finalize the first-pass schema for the core tables and then create the repository folders where raw, synthetic, and processed data will live.
+The next step is to finalize the metrics plan, then download and organize the first public data files for IPEDS, College Scorecard, and IU Common Data Set.
