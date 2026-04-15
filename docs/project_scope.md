@@ -6,25 +6,25 @@ Student Success Signal Hub
 
 ## Project Summary
 
-Student Success Signal Hub is a higher education analytics and business analysis project that simulates how a university team could monitor placement activity, advising engagement, experiential learning participation, and first-destination outcomes in a single reporting environment.
+Student Success Signal Hub is a higher education analytics and business analysis project that demonstrates how a university team could combine public benchmark data, institutional profile data, and graduate outcomes context in a single reporting environment.
 
-The project is intentionally designed to align with the responsibilities of an Academic Placement and Analytics Specialist or Business Analyst role. It emphasizes data integration, process support, routine and ad hoc reporting, documentation, and stakeholder-focused insights rather than dashboarding alone.
+The project is intentionally designed to align with the responsibilities of an Academic Placement and Analytics Specialist or Business Analyst role. It emphasizes data sourcing, KPI design, reporting structure, documentation, and stakeholder-focused insights rather than dashboarding alone.
 
 ## Problem Statement
 
-University student success teams often work across disconnected systems for placement testing, advising, experiential learning, and career outcomes tracking. This creates operational inefficiencies, delays in follow-up, inconsistent reporting, and limited visibility into how different parts of the student experience connect over time.
+University student success and assessment teams often rely on multiple public and institutional reporting sources that are difficult to compare directly. This creates challenges in benchmarking performance, interpreting outcomes, and building a coherent story about student success and graduate results.
 
-This project will simulate a more integrated analytics approach by combining institutional benchmark data with realistic operational records to support both day-to-day monitoring and longer-term decision-making.
+This project addresses that problem by combining public benchmark data, institutional profile context, and graduate outcomes measures into a single reporting framework that supports interpretation and decision-making.
 
 ## Project Goal
 
 Build a realistic analytics solution that helps higher education stakeholders answer questions about:
 
-- placement participation and completion
-- advising engagement and follow-up
-- experiential learning participation
-- graduate outcomes and first-destination knowledge rates
-- data quality issues that affect institutional reporting
+- institutional scale and student profile
+- retention and graduation performance
+- admissions and completion context
+- graduate outcomes, earnings, and debt indicators
+- differences in reporting across public data sources
 
 ## Intended Audience
 
@@ -61,53 +61,40 @@ Needs:
 
 The project should be able to answer the following questions.
 
-### Placement and Early Progress
-
-- Which student groups have the lowest placement completion rates?
-- How long does it take students to complete required placement activities?
-- Which students may need advising or operational follow-up due to incomplete placement activity?
-
-### Engagement and Support
-
-- How does advising engagement vary across majors, cohorts, and student groups?
-- Are students who receive advising support more likely to complete placement-related milestones?
-- Which engagement activities appear most associated with positive student progression?
-
 ### Outcomes and Reporting
 
-- What is the first-destination knowledge rate by cohort and major?
-- How do graduate outcomes differ across student segments?
-- Where are the largest gaps in outcome collection or verification?
+- What do public sources show about IU Bloomington's outcomes and performance?
+- How do retention, graduation, and admissions metrics compare across sources?
+- How can earnings and debt context strengthen student success reporting?
 
 ### Data Quality and Process Improvement
 
-- What data issues most frequently interfere with accurate reporting?
-- Which records require manual review or follow-up?
-- Where should staff prioritize outreach or process improvement efforts?
+- Which metrics are defined differently across public sources?
+- What assumptions need to be documented to compare public higher education data responsibly?
+- How should a business analyst communicate those differences to stakeholders?
 
 ## Scope Boundaries
 
 ### In Scope
 
-- placement analytics
-- advising engagement reporting
-- experiential learning participation reporting
-- first-destination and graduate outcomes summaries
+- institutional benchmark reporting
+- institution profile reporting
+- public graduate outcomes summaries
 - KPI calculation and trend reporting
-- data quality validation and exception reporting
+- cross-source metric comparison
 - business analyst documentation such as assumptions, requirements, and definitions
 
 ### Out of Scope
 
 - live integration with real university systems
 - use of protected student records
-- predictive modeling as the primary project focus
+- synthetic student-level operational workflows
 - production-grade authentication or enterprise deployment
 - institution-specific policy recommendations
 
 ## Data Strategy
 
-This project will use a hybrid data strategy to balance authenticity and ethical constraints.
+This project will use an existing-public-data strategy to keep the work authentic, transparent, and portfolio-friendly.
 
 ### Real Data
 
@@ -125,17 +112,7 @@ Expected sources include:
 - Indiana University public institutional pages and common data sources
 - NACE first-destination standards
 
-### Synthetic Data
-
-The project will generate student-level operational records for:
-
-- placement exam activity
-- advising interactions
-- experiential learning participation
-- career outcomes outreach and verification workflows
-- support or exception cases related to data collection
-
-Synthetic data will be modeled to reflect realistic university workflows, distributions, and reporting challenges, including missing values, inconsistent categories, delayed updates, and duplicate records.
+No synthetic student-level records are included in Version 1. The project is intentionally limited to public institutional and outcomes data plus documented methodology context.
 
 ## Key Deliverables
 
@@ -159,15 +136,15 @@ The project clearly maps to higher education operations and assessment work rath
 
 ### 2. Data Realism
 
-The project uses credible public sources and transparently explains the role of synthetic operational data.
+The project uses credible public sources and clearly documents how different reporting definitions affect interpretation.
 
 ### 3. Analytical Value
 
 The project produces useful KPIs, trend analysis, and exception reporting that answer realistic stakeholder questions.
 
-### 4. Operational Insight
+### 4. Reporting Insight
 
-The project supports both strategic reporting and day-to-day follow-up needs.
+The project supports both institutional benchmarking and leadership storytelling needs.
 
 ### 5. Documentation Quality
 
@@ -186,16 +163,16 @@ The final output is strong enough to discuss in interviews as evidence of:
 
 ### Assumptions
 
-- public institutional data will be sufficient for benchmark context
-- synthetic student-level data can credibly replicate operational workflows
+- public institutional data will be sufficient for benchmark and outcomes context
+- source definitions can be documented clearly enough to make comparisons responsible
 - the project audience values analyst documentation in addition to technical implementation
 
 ### Risks
 
 - public data may be aggregated in ways that limit direct comparability
-- overly clean synthetic data could reduce realism
+- source definitions may vary across reporting systems
 - project scope could become too broad without careful prioritization
 
 ## Recommended Next Step
 
-Phase 2 should document the authentic data sources in detail and explicitly map which parts of the project will use real public data versus synthetic operational data.
+The next step is to continue polishing the dashboard, package the project for portfolio presentation, and expand the narrative with screenshots and case-study language.

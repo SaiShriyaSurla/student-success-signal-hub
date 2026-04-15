@@ -144,15 +144,16 @@ st.markdown(
     <style>
     .stApp {
         background:
-            radial-gradient(circle at top left, rgba(184, 208, 255, 0.35), transparent 28%),
-            linear-gradient(180deg, #f4f7fb 0%, #ffffff 48%, #f7f8f4 100%);
+            radial-gradient(circle at top left, rgba(165, 202, 255, 0.22), transparent 28%),
+            linear-gradient(180deg, #f5f7f2 0%, #fffdf8 48%, #f3efe6 100%);
     }
     .hero {
         padding: 1.4rem 1.6rem;
         border-radius: 22px;
-        background: linear-gradient(135deg, #0f3d3e 0%, #164f52 55%, #c9792b 100%);
-        color: #f7f4ef;
-        box-shadow: 0 18px 60px rgba(15, 61, 62, 0.18);
+        background: linear-gradient(135deg, #f3efe2 0%, #e3efe8 55%, #f3d7b1 100%);
+        color: #173536;
+        border: 1px solid rgba(23, 53, 54, 0.08);
+        box-shadow: 0 18px 50px rgba(76, 88, 84, 0.12);
         margin-bottom: 1rem;
     }
     .hero h1 {
@@ -166,18 +167,21 @@ st.markdown(
         font-size: 1rem;
     }
     .context-card {
-        background: rgba(255, 255, 255, 0.75);
-        border: 1px solid rgba(15, 61, 62, 0.08);
+        background: rgba(255, 252, 247, 0.96);
+        color: #1f2e2e;
+        border: 1px solid rgba(23, 53, 54, 0.08);
         border-radius: 18px;
         padding: 1rem 1.1rem;
         margin-bottom: 1rem;
+        box-shadow: 0 10px 30px rgba(76, 88, 84, 0.08);
     }
     .section-title {
         font-size: 0.84rem;
         text-transform: uppercase;
         letter-spacing: 0.08em;
-        color: #6e6d63;
+        color: #6b6558;
         margin-bottom: 0.3rem;
+        font-weight: 700;
     }
     </style>
     """,
@@ -262,9 +266,11 @@ with right:
     st.markdown(
         """
         <div class="context-card">
-        - This prototype uses existing public data only.
-        - IPEDS, College Scorecard, and IU CDS values may differ slightly because reporting windows and definitions vary.
-        - The current dashboard is a Version 1 summary view built from cleaned benchmark tables.
+        <ul>
+            <li>This prototype uses existing public data only.</li>
+            <li>IPEDS, College Scorecard, and IU CDS values may differ slightly because reporting windows and definitions vary.</li>
+            <li>The current dashboard is a Version 1 summary view built from cleaned benchmark tables.</li>
+        </ul>
         </div>
         """
         ,
@@ -275,10 +281,12 @@ with right:
     st.markdown(
         """
         <div class="context-card">
-        - Add trend charts across multiple years
-        - Compare IU Bloomington with peer institutions
-        - Add filters for source and metric group
-        - Expand the reporting context panel with NACE methodology
+        <ul>
+            <li>Add trend charts across multiple years</li>
+            <li>Compare IU Bloomington with peer institutions</li>
+            <li>Add filters for source and metric group</li>
+            <li>Expand the reporting context panel with NACE methodology</li>
+        </ul>
         </div>
         """
         ,
